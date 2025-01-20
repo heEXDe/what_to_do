@@ -18,7 +18,7 @@ function Task({ id }) {
 
   return (
     <li className="card" id={cardId} aria-labelledby={titleId}>
-      <TaskProgress id={id} />
+      
       <TaskHeader
         id={id}
         isEditable={isEditable}
@@ -195,7 +195,7 @@ const initialState = [
       </ol>
     );
   }
-
+/*
 function TaskProgress({ id }) {
   const {
     state: { tasks },
@@ -213,6 +213,7 @@ function TaskProgress({ id }) {
     />
   );
 }
+*/
 
 function TaskProvider({ children }) {
   const value = useTaskReducer();
